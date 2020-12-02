@@ -15,7 +15,8 @@ pstr=$3
 
 pos1c = substr(pstr,minc,1)
 pos2c = substr(pstr,mostc,1)
-if ((s==pos1c)&&(s!=pos2c)){
+if (  ((s==pos1c)&&(s!=pos2c))||((s!=pos1c)&&(s==pos2c))   ){
+print ("",pstr," s: ",s, " pos1: ",pos1c, "pos2: ",pos2c)
 	valids++
 	}
 
